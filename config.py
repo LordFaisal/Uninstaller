@@ -1,15 +1,15 @@
 # config.py
 
-"""
-Global configuration settings for the WinUninstaller.
-"""
-
-# --- App Info ---
 APP_NAME: str = "WinUninstaller"
 APP_VERSION: str = "1.0.0"
 
-# --- File Paths ---
 LOG_FILE_PATH: str = "logs/uninstall_log.txt"
 
-# --- Behavior Settings ---
-DRY_RUN: bool = False # If True, simulate uninstalls without actually running them
+DRY_RUN: bool = True
+
+# --- Uninstall Status Constants ---
+STATUS_SUCCESS: str = "SUCCESS"
+STATUS_FAILED: str  = "FAILED"
+STATUS_DRY_RUN: str = "DRY-RUN"
+STATUS_ERROR: str   = "ERROR"
+APPS_PER_PAGE: int = 20

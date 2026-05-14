@@ -11,12 +11,11 @@ touching any business logic in core/.
 
 
 import math
-from config import APP_NAME, APP_VERSION
+from config import APP_NAME, APP_VERSION, APPS_PER_PAGE
 
 # --- Layout Constants ---
 # Defining column widths as constants means changing the layout
 # requires editing ONE number, not hunting through print statements.
-APPS_PER_PAGE = 20
 COL_NUM = 5
 COL_NAME = 45
 COL_VERSION = 20
@@ -109,7 +108,7 @@ def display_apps(apps: list[dict], page: int) -> None:
     
     # --- Footer ---
     print(f"\n {'─'*60}")
-    print(f" Page {page}/{total_pages} | [n] Next [p] Previous [q] Quit")
+    print(f" Page {page}/{total_pages} | [n] Next [p] Previous [s] Search [q] Quit")
     print(f" {'─'*60}\n")
 
     

@@ -1,0 +1,7 @@
+[2026-05-14 01:52:53] SUCCESS | Google Chrome                            | "C:\Program Files\Chrome\uninstall.exe"
+[2026-05-14 01:52:53] DRY-RUN | Spotify                                  | "C:\Users\Faisa\AppData\Roaming\Spotify\uninstall.exe"
+[2026-05-14 01:52:53] FAILED  | Some Broken App                          | "C:\missing\uninstall.exe"
+[2026-05-14 03:46:15] FAILED  | Anaconda3 2025.12-2 (Python 3.13.9 64-bit) | "C:\Users\Faisa\anaconda3\Uninstall-Anaconda3.exe"
+[2026-05-14 03:47:15] SUCCESS | LittleBigMouse                           | C:\Program Files\LittleBigMouse\Uninstall.exe
+[2026-05-14 03:49:18] DRY-RUN | CrystalDiskMark 9.0.1                    | "C:\Program Files\CrystalDiskMark9\unins000.exe"
+[2026-05-14 03:49:23] DRY-RUN | CrystalDiskInfo 9.7.2                    | "C:\Program Files\CrystalDiskInfo\unins000.exe"
