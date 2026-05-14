@@ -1,9 +1,21 @@
 # config.py
+import os
+import sys
+
+# When packaged as exe, sys.executable points to the exe location.
+# When run as a script, __file__ points to config.py.
+# This ensures logs always appear next to the executable/script.
+if getattr(sys, 'frozen', False):
+    # Running as compiled exe
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    # Running as normal Python script
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+LOG_FILE_PATH: str = os.path.join(BASE_DIR, "logs", "uninstall_log.txt")
 
 APP_NAME: str = "WinUninstaller"
 APP_VERSION: str = "1.0.0"
-
-LOG_FILE_PATH: str = "logs/uninstall_log.txt"
 
 DRY_RUN: bool = True
 
